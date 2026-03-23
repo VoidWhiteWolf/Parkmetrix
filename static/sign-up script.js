@@ -90,9 +90,9 @@ function handleLogin() {
         alert("Welcome back, " + matchedUser.FullName + "!");
 
         // Redirect based on role
-        if (matchedUser.Role === "Mall Admin") {
-            window.location.href = "admin.html"; // stays the same
-        } 
+       if (matchedUser.Role === "Mall Admin") {
+    window.location.href = "/admin";
+}
         else if (matchedUser.Role === "Customer") {
             // Redirect to localhost index.html
             window.location.href = "/"; 
